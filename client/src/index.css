@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.gradient-01 {
+  position: absolute;
+  width: 200px;
+  height: 238px;
+  top: 0;
+  background: #ca00ff;
+  filter: blur(175px);
+}
+
+.gradient-02 {
+  position: absolute;
+  width: 200px;
+  height: 238px;
+  top: -6rem;
+  right: 0px;
+  background: #7aebfb;
+  filter: blur(190px);
+}
+.gradient-03 {
+  position: absolute;
+  width: 200px;
+  height: 238px;
+  bottom: -6rem;
+  right: 0px;
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
+.try {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );
+  border: solid 3px transparent;
+  background-clip: padding-box;
+  box-shadow: 0px 0px 0px 3px #ffffff00;
+  color: white;
+  min-height: 43px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
+
+.try:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+.try:hover {
+  box-shadow: 0px 0px 0px 3px #30a1b8;
+}
+
+.try svg {
+  width: 16px;
+}
+
+.chatText {
+    background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.bg{
+    background-image: url('/bg.svg');
+    background-size: cover;
+}
